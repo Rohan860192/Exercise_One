@@ -1,6 +1,6 @@
 package LoginPage;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import Page.Login;
 import Utility.Constants;
