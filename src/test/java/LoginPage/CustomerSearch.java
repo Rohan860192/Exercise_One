@@ -33,7 +33,7 @@ public class CustomerSearch extends BaseTest {
 		lp.clickcustomer();
 		lp.clickcusmenu();
 		lp.customersearch(fname,lname);
-		
+				
 }
 	@DataProvider
 	public Object[][] searchData() {

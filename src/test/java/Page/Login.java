@@ -25,6 +25,7 @@ public class Login {
 		By verifycus = By.xpath("//td[text()='Victoria Terces']");
 		By firstname = By.id("SearchFirstName");
 		By lastname = By.id("SearchLastName");
+		By searchresult = By.xpath("//td[text()='Virat Kohli']");
 		
 
 		// Methods
@@ -86,7 +87,7 @@ public class Login {
 			driver.findElement(firstname).sendKeys(fname);
 			driver.findElement(lastname).sendKeys(lname);
 			driver.findElement(By.id("search-customers")).click();
-			String searchresult = driver.findElement(By.xpath("//td[text()='Virat Kohli']")).getText();
+			driver.findElement(searchresult).getText();
 			System.out.println("The Full Name is : "+ searchresult);
 			
 			Assert.assertEquals(searchresult,"Virat Kohli");
