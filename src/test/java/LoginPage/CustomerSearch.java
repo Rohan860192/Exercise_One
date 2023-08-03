@@ -8,7 +8,7 @@ import Utility.Constants;
 
 public class CustomerSearch extends BaseTest {
 	
-	@Test
+	@Test(priority=1)
 	public void customerlogin() throws Exception {
 		
 		
@@ -25,7 +25,7 @@ public class CustomerSearch extends BaseTest {
 		
 			
 	}
-	@Test(dataProvider ="searchData")
+	@Test(priority=2,dataProvider ="searchData")
 	public void customerverfication(String fname,String lname ) throws Exception {
 	
 		Login lp = new Login(driver);

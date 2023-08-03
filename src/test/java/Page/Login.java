@@ -87,10 +87,10 @@ public class Login {
 			driver.findElement(firstname).sendKeys(fname);
 			driver.findElement(lastname).sendKeys(lname);
 			driver.findElement(By.id("search-customers")).click();
-			driver.findElement(searchresult).getText();
-			System.out.println("The Full Name is : "+ searchresult);
+			String result = driver.findElement(searchresult).getText();
+			System.out.println("The Full Name is : "+ result);
 			
-			Assert.assertEquals(searchresult,"Virat Kohli");
+			Assert.assertEquals(result,"Virat Kohli");
 			
 			
 		}
