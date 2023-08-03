@@ -42,7 +42,7 @@
 
 						<suiteXmlFiles>
 
-							<suiteXmlFile>testng_alert.xml</suiteXmlFile>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
 
 							<!--
 							<suiteXmlFile>testng_crossBrowser_parallel.xml</suiteXmlFile> -->
